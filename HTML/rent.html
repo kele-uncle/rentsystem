@@ -1,0 +1,41 @@
+//- PRELOADING AREA
+link(rel="preload" href="https://images.unsplash.com/photo-1564540586988-aa4e53c3d799?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ")
+link(rel="preload" href="https://images.unsplash.com/photo-1545454760-a8e55231441c?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ")
+link(rel="preload" href="https://images.unsplash.com/photo-1574118140569-4e7d8bd0ffeb?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ")
+link(rel="preload" href="https://images.unsplash.com/photo-1534490449938-cf92275c6db2?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ")
+link(rel="preload" href="https://images.unsplash.com/photo-1580789724132-7f75abddbe0f?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ")
+link(rel="preload" href="https://images.unsplash.com/photo-1556866149-a42ffe6478ea?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ")
+link(rel="preload" href="https://images.unsplash.com/photo-1596491652949-32762d03b887?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ")
+link(rel="preload" href="https://images.unsplash.com/photo-1584211932359-513d7b58fe5f?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ")
+link(rel="preload" href="https://images.unsplash.com/photo-1467385829985-2b0fb82b5193?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ")
+link(rel="preload" href="https://images.unsplash.com/photo-1601560896164-834d6f61ea66?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ")
+//- HTML AREA
+.bg-light.w-100.min-vh-100.d-flex.align-items-center.justify-content-center
+  .card.shadow.ti-webring.ti-md-webring
+    .card-header.bg-dark.text-light
+      i.far.fa-lightbulb
+      span.ml-2 Codepen Challenge: Webring
+    .ti-card-img.bg-dark#webringImage
+    .card-body
+      h5.card-title
+        i#webringIcon
+        span.ml-2#webringTitle
+      p.card-text#webringText
+      .d-flex.justify-content-end
+        button.btn.btn-primary#webringJoin
+    .list-group.list-group-flush
+      .list-group-item
+        span Link: 
+        a(href="#")#webringURL
+      a(href="#").list-group-item.list-group-item-action#webringPrev
+        i.fas.fa-arrow-left
+        span.ml-2 Previous Ring
+      a(href="#").list-group-item.list-group-item-action#webringNext
+        i.fas.fa-arrow-right 
+        span.ml-2 Next Ring
+      a(href="#").list-group-item.list-group-item-action#webringRandom
+        i.fas.fa-random
+        span.ml-2 Show Random Ring
+    .ti-webring-loader.d-flex.align-items-center.justify-content-center#webringLoader
+      .spinner-border(role="status")
+        span.sr-only Loading...
